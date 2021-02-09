@@ -1,3 +1,8 @@
+
+
+
+
+
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up!🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
 /*
@@ -8,6 +13,17 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
+// let votingAge = prompt('check voting eligibility');
+
+// if( votingAge >=18){
+
+// console.log("you can vote");
+// }
+
+// else {
+
+// console.log("you can't vote ");
+// }
 
 
 
@@ -21,6 +37,14 @@ Do the following:
 
 */
 
+// let a = 10;
+// let b = 5;
+//  if ( b === 5 ){
+//     a=20;
+//     console.log(a);
+
+//  };
+
 
 
 /*
@@ -33,6 +57,15 @@ Do the following:
 
    HINT: look up the Number method
 */
+  
+
+// let myNumber = "1999"
+
+// console.log(parseInt(myNumber));
+ 
+
+
+
 
 
 /*
@@ -46,6 +79,19 @@ Do the following:
 */
 
 
+
+// const moodChecker=prompt("enter your mood");
+// if(moodChecker ==="happy") {
+//    console.log("Yay me too!");
+// }
+// else if (moodChecker ==="sad"){
+//    console.log("Aw cheer up");
+// }
+// else{
+//    console.log("so moody");
+// };
+
+
 /*
 
 
@@ -53,15 +99,27 @@ Task 5 - Odd or Even
 
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
-*/
 
-var num = ; // write a number here
+
+*/
+// let number = prompt(" enter a number ");
+// if ( number % 2 ==0){
+//    console.log("the number is even");
+// }
+// else{
+//    console.log(" the number is od6d");
+// }
+
+
+
+
+//var num = ; // write a number here
 
 // write your conditions here
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
+ 
 /*
 
 You're about to do an assignment called "Fizz Buzz", which is one of the classic programming challenges. 
@@ -92,6 +150,7 @@ The point is: the remainder operator is useful for finding out if X is a multipl
 Knowing this should help you complete this assignment without any issue.
 
 
+
 Extra Credit:
 
 Instead of only printing "fizz", "buzz", and "fizzbuzz", add a fourth print statement: "prime". 
@@ -101,6 +160,28 @@ It's okay for it to be slow.
 
 
 */
+
+// function  FIZZBUZZ (){
+
+
+//    for(var i=1; i <= 100; i++){
+//       if(i % 3 === 0 && i % 5 ===0){
+//          console.log("fizzbuzz");
+//       } else if(i % 3 ===0);
+//       console.log("fizz");
+//    } else if(i % 5 === 0);{
+// console.log("buzz");
+//    }
+//    else{
+//       console.log(i);
+//    }
+// }
+
+//  FIZZBUZZ();
+
+
+
+
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -116,6 +197,6 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+/*function vowelCounter(add your code here) {
+    add your code here
+}*/
