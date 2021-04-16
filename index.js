@@ -1,3 +1,5 @@
+//Shaqadii Day 4 Intro to JS
+
 /*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up!🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
 
 /*
@@ -6,10 +8,13 @@ Task 1 - Voting Age
 Do the following:   
    1. Make a variable called votingAge and give it a value
    2. Return true if age is 18 or higher
-
-*/
-
-
+*/ 
+   let votingAge = 20
+if (votingAge >= 18){
+   console.log("true")
+ } else {
+console.log("false")
+ }
 
 /*
 Task 2 - Values
@@ -18,9 +23,17 @@ Do the following:
    1. Declare two variables and assign them values
    2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
    3. Return the new value of the 1st variable
-
 */
+  const numb1 = 20
+  const numb2 = 25
+  const result = numb1 + numb2
+  console.log(result)
 
+//or we can say
+   const variable1 = "Hi my name is"
+   const variable2 = "Abdi"
+   const twoVariables = variable1 + variable2
+   console.log(twoVariables)
 
 
 /*
@@ -34,6 +47,14 @@ Do the following:
    HINT: look up the Number method
 */
 
+   const name1 = "1999"
+   console.log(name1)
+   console.log(typeof(name1))
+
+   const name2 = 1999
+   console.log(name2)
+   console.log(typeof(name2))
+
 
 /*
 Task 4 - Mood Checker
@@ -42,23 +63,31 @@ Do the following:
    1. Write a script that prompts the user for their current mood. 
    2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up',
    3. Else just print 'So moody!'
-
 */
+   if (user = happy) {
+   console.log("Yay me too!");
+   } else if (user = unhappy) {
+   console.log("Aw cheer up!");
+   } else {
+   console.log("So moody!");
+   }
 
 
 /*
-
-
 Task 5 - Odd or Even
-
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
-
 */
-
-var num; // write a number here
-
+//var num; // write a number here
+const number = prompt("19765");
 // write your conditions here
-
+//check if the number is even
+if(19765 % 2 == 0) {
+   console.log("The number is even.");
+}
+// if the number is odd
+else {
+   console.log("The number is odd.");
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -101,6 +130,7 @@ It's okay for it to be slow.
 
 
 */
+// Kan waa fahmi waayey Ustaad
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
