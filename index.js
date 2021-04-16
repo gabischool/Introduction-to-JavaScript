@@ -43,11 +43,15 @@ Task 3 - Convert Strings to Numbers
 /*
 Task 4 - Mood Checker
 
-Do the following:   
-   1. Write a script that prompts the user for their current mood. 
-   2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up',
-   3. Else just print 'So moody!'
+// var mood = prompt("How is your mood today?");
 
+      // if (mood == "sad") {
+      //   console.log("Aw cheer up");
+      // } else if (mood == "happy") {
+      //   console.log("Yay me too!");
+      // } else {
+      //   console.log("so moody");
+      // }
 */
 
 
