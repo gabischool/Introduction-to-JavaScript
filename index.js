@@ -29,12 +29,14 @@ Task 2 - Values
 /*
 Task 3 - Convert Strings to Numbers
 
-Do the following:   
-   1. Declare a string type variable with the value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Return the result
+  //   var num1 = "1999";
+      //   var num2 = 1999;
+      //   if (num1 === num2) {
+      //     console.log(true);
+      //   } else {
+      //     console.log(false);
+      //   }
 
-   HINT: look up the Number method
 */
 
 
