@@ -3,9 +3,9 @@
 /*
 Task 1 - Voting Age
 
-Do the following:   
-   1. Make a variable called votingAge and give it a value
-   2. Return true if age is 18 or higher
+  // var VotingAge= 18
+      // if ("votingAge >=18")
+      // console.log("true")
 
 */
 
@@ -14,10 +14,13 @@ Do the following:
 /*
 Task 2 - Values
 
-Do the following:   
-   1. Declare two variables and assign them values
-   2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
-   3. Return the new value of the 1st variable
+  // let Grade = 90;
+      // if (Grade <90) {
+      //     console.log("Fail")
+      // } else {
+      //     console.log("Pass")
+      // }
+
 
 */
 
