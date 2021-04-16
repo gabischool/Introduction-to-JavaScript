@@ -56,17 +56,16 @@ Task 4 - Mood Checker
 
 
 /*
-
-
 Task 5 - Odd or Even
 
-Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
+// const number = prompt("Enter a number: ");
 
+      // if (number % 2 == 0) {
+      //   console.log("The number is even.");
+      // } else {
+      //   console.log("The number is odd.");
+      // }
 */
-
-var num; // write a number here
-
-// write your conditions here
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
