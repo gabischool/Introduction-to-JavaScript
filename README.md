@@ -1,21 +1,18 @@
-# Introduction To JavaScript
+# Description
 
-The module is the afternoon assignment or task that students work through independently. This expands on the live lecture completed earlier with the instructor.
+this is an assignment tackling on numerous javascript foundations.
 
-## JavaScript Foundations
+## Author 
 
-## Objectives
+Mohamed, Abdirahman 
 
-- use let, const, var and demonstrate their differences.
-- understand and be able to use arrays.
-- write a basic for loop / while loop.
-- write control flow using if/else statements.
-- use function declarations, expressions, and arrow
-functions and describe their differences
-  
+## Objectives of the Assignment
+
+- I will use let, const, Var and demonstrate them.
+- I will also use  a basic for loop.
+- I will aslo used conditional statements like : if/else statements.
+
 ## Introduction
-
-Today you'll worth through 5 JavaScript Tasks to practice today's objectives and get familiar and comfortable with the foundations of JavaScript. 
 
 Assignments are outlined in the `index.js` file, please read the instructions carefully for each task and complete it. Note that you may have to use your googling skills to research and look things up if you do not have all the information you need to complete the task.
 
@@ -39,12 +36,6 @@ Using VSCode and Command Line:
 Find the `index.js` file and complete the tasks as they're written in there. 
 
 As you work on your code you should make use of `console.log` to check your progress and debug.
-
-### Task 3: Stretch Goals
-
-After you have completed the requirements, try any of the following challenges. As always, note that these may require additional research beyond what you learned in this module.
-
-- [ ] See tasks labelled stretch. Please ensure you've completed MVP before you attempt the stretch goals. 
 
 
 ## Resources
