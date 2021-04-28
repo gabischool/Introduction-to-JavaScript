@@ -8,9 +8,20 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
+   let age=18
+if(age>=18)
+{
+   console.log(true)
+}
+else {
+  
+   console.log(false);
+ 
+  }
 
 
-
+//conditional statement
+ 
 /*
 Task 2 - Values
 
@@ -20,6 +31,14 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
+ let age = 30;
+let year = 2020
+if (age>20) {
+  console.log(“old”)
+}else {
+  console.log(“young”)
+}
+
 
 
 
@@ -33,6 +52,11 @@ Do the following:
 
    HINT: look up the Number method
 */
+const no = "1999";
+console.log(typeof (no));
+
+parseInt("1999");
+
 
 
 /*
@@ -44,6 +68,14 @@ Do the following:
    3. Else just print 'So moody!'
 
 */
+function test() {
+   let answer = prompt("what is your mood");
+   console.log(answer);
+}
+
+
+
+
 
 
 /*
@@ -54,8 +86,22 @@ Task 5 - Odd or Even
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 */
+// program to check if the number is even or odd
+// take input from the user
 
-var num; // write a number here
+const number = prompt("Enter a number: ");
+
+
+if(number % 2 == 0) {
+    console.log("The number is even.");
+}
+
+
+else {
+    console.log("The number is odd.");
+}
+
+//var num; // write a number here
 
 // write your conditions here
 
@@ -91,7 +137,26 @@ If that was confusing, don't worry. It will make more sense as you use it.
 The point is: the remainder operator is useful for finding out if X is a multiple of Y. If it is, then X % Y will yield zero. 
 Knowing this should help you complete this assignment without any issue.
 
-
+*/
+//for loop
+function fizzt=yield() {
+   for (let i=1; i<100; i++) {
+      if(i%15 ==0){
+         console.log("fizzbuzz")
+      }
+      else if(i%5==0) {
+         console.log("buzz")
+      }
+      else if(i%3==0) {
+         console.log("fizz")
+      }
+      else{
+         console.log(i);
+      }
+   }
+}
+fizzy();
+/*
 Extra Credit:
 
 Instead of only printing "fizz", "buzz", and "fizzbuzz", add a fourth print statement: "prime". 
