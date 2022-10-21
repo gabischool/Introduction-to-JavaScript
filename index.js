@@ -8,7 +8,10 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
-
+let votingAge = 18
+if( votingAge> 25 || votingAge<=18){
+   console.log(" true")
+}
 
 
 /*
@@ -20,6 +23,12 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
+let num1 =8
+let num2 = 9
+num1 = 9
+console.log(num1)
+    
+
 
 
 
@@ -33,6 +42,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let num = 1999;
+num = "1999";
+console.log(num)
 
 
 /*
@@ -45,7 +57,19 @@ Do the following:
 
 */
 
-
+ let mood =prompt("inter your mood")
+ 
+ if (mood=='happy'){
+   console.log("ay me too!")
+ }
+ else if (mood=='sad'){
+   console.log("aw cheer up!")
+ }
+ else {
+   console.log("soo moody")
+ }
+ 
+ 
 /*
 
 
@@ -55,12 +79,33 @@ Use conditionals to check if a hardcoded number is odd or even, and then console
 
 */
 
-var num; // write a number here
-
+// var num; // write a number here
 // write your conditions here
+var tiro=4
+if (tiro%2==0){
+   console.log("the number is even")
+}
+else{
+   console.log("the number is odd")
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+for ( let i=1; i<101; i++){
+   if (i%15===0){
+      console.log("FIZZBUZZ");
+   }
+   else if (i%3===0){
+      console.log("FIzz");
+   }
+   else if (i%5===0){
+      console.log("BUZZ");
+   }
+   else{
+      console.log(i);
+   }
+
+};
 
 /*
 
@@ -116,6 +161,8 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+// function vowelCounter(/*add your code here*/) {
     /*add your code here*/
-}
+
+
+
