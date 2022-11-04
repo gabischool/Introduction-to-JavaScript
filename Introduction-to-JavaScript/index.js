@@ -8,6 +8,19 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
+let votingAge= 13
+
+if (votingAge >=18)
+  {
+    console.log("true")
+  }
+else if (votingAge <18)
+  {
+    console.log("false")
+  }
+else {
+  console.log(child)
+}
 
 
 
@@ -21,7 +34,9 @@ Do the following:
 
 */
 
-
+let x;
+x=10* (25/5) + 50/2
+console.log(x)
 
 /*
 Task 3 - Convert Strings to Numbers
@@ -33,6 +48,11 @@ Do the following:
 
    HINT: look up the Number method
 */
+const sum="1999"
+console.log(typeof(sum));
+
+
+
 
 
 /*
@@ -44,6 +64,19 @@ Do the following:
    3. Else just print 'So moody!'
 
 */
+//HAPPY TEST
+function testmood(a) {
+   if (a >10 ) {
+      return 'Yay me too!';
+   }
+   else if (a <10 ) {
+      return 'Aw cheer up'
+   }
+   else {
+      return 'So moody!'
+   }
+}
+console.log(testmood(10))
 
 
 /*
@@ -54,10 +87,28 @@ Task 5 - Odd or Even
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 */
+let number= 3
 
-var num; // write a number here
+if (number % 2 ==0)
+       // number is even
+  {
+    console.log("Even")
+  }
+else if (number % 2 ==1)
+      // number is odd
+  {
+    console.log("Odd")
+  }
+else {
+  console.log("prime")
+}
 
-// write your conditions here
+
+
+
+
+
+ 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -101,6 +152,21 @@ It's okay for it to be slow.
 
 
 */
+  for ( let i=1; i< 101; i++ )
+  {
+   if (i%15 === 0){
+      console.log('FizzBuzz');
+   }
+   else if(i%5 === 0){
+      console.log('Fizz');
+   }
+   else if(i%3 === 0){
+      console.log('Buzz');
+   }
+   else {
+      console.log(i);
+   }
+  }
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -116,6 +182,26 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
+//function vowelCounter(str/*add your code here*/) 
+
     /*add your code here*/
-}
+    function vowel_count(str1)
+    {
+      var vowel_list = 'aeiouAEIOU';
+      var vcount = 0;
+      
+      for(var x = 0; x < str1.length ; x++)
+      {
+        if (vowel_list.indexOf(str1[x]) !== -1)
+        {
+          vcount += 1;
+        }
+      
+      }
+      return vcount;
+    }
+    console.log(vowel_count("How many vowels are there?"));
+
+
+    
+
