@@ -8,6 +8,8 @@ Do the following:
    2. Return true if age is 18 or higher
 
 */
+let votingAge =18;
+console.log(votingAge>=18);
 
 
 
@@ -20,6 +22,11 @@ Do the following:
    3. Return the new value of the 1st variable
 
 */
+let x=2;
+let y=3;
+if(x==2){
+    x=y;
+    console.log(x)
 
 
 
@@ -33,7 +40,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+var number='1999';
+var number=1999;
+console.log(number);
 
 /*
 Task 4 - Mood Checker
@@ -45,6 +54,21 @@ Do the following:
 
 */
 
+let mood=  'happy'// or //'sad' ;
+let mood1='happy';
+let mood2='sad';
+if (mood==mood1){
+    console.log("Yay me too!");
+
+}
+else if(mood==mood2){
+        console.log("Aw cheer up");
+
+}
+else{
+    console.log("So moody!");
+
+}
 
 /*
 
@@ -54,10 +78,17 @@ Task 5 - Odd or Even
 Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
 
 */
+let nUmber=11   //or change whatever you want
+if(nUmber%2==0){
+    console.log("the number is even")
+}
+else{
+    console.log("the number is odd")
+}
 
-var num; // write a number here
 
-// write your conditions here
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -101,6 +132,23 @@ It's okay for it to be slow.
 
 
 */
+
+let num=9;
+for(let i=0;i<=100;i++){
+    if (num%3==0){
+        console.log("Fizz")
+    }
+    else if(num%5==0){
+        console.log("buzz")
+
+    }
+    else if(num%3==0 && (num%5==0){
+        console.log("FizzBuzz")
+
+    }
+    
+    
+}
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
