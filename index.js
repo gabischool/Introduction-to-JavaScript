@@ -123,6 +123,18 @@ It's okay for it to be slow.
 
 */
 
+const divisibleByThree = 3, divisibleByFive = 5, num = 2
+for(let i = 1; i <= 100; i++){
+   if(i % divisibleByThree === 0 && i % divisibleByFive === 0)
+      console.log('fizzbuzz')
+   else if(i % divisibleByThree === 0)
+      console.log('fizz')
+   else if(i % divisibleByFive === 0)
+      console.log('buzz')
+   else 
+      console.log(i)
+}
+
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
