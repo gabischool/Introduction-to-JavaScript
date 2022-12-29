@@ -9,6 +9,10 @@ Do the following:
 
 */
 
+const votingAge = 18
+if(votingAge >= 18) {
+   console.log(true)
+}
 
 
 /*
@@ -21,7 +25,11 @@ Do the following:
 
 */
 
-
+let num1=5, num2 = 10
+if (num1 < num2) {
+   num1 = num2
+   console.log(num1) 
+}
 
 /*
 Task 3 - Convert Strings to Numbers
@@ -34,6 +42,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+let year = "1999"
+year = Number(year)
+console.log(typeof(year))
+console.log(year)
 
 /*
 Task 4 - Mood Checker
@@ -45,6 +57,14 @@ Do the following:
 
 */
 
+let input = prompt("Enter your mood:")
+if(input === 'happy'){
+   console.log('Yay me too!')
+}else if(input === 'sad'){
+   console.log('Aw cheer up')
+}else{
+   console.log('So moody')
+}
 
 /*
 
@@ -55,10 +75,11 @@ Use conditionals to check if a hardcoded number is odd or even, and then console
 
 */
 
-var num; // write a number here
+var number = 28; // write a number here
 
 // write your conditions here
-
+if(number % 2 == 0) {console.log(number + " is even" )}
+else {console.log(number + " is odd" )}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -101,6 +122,18 @@ It's okay for it to be slow.
 
 
 */
+
+const divisibleByThree = 3, divisibleByFive = 5, num = 2
+for(let i = 1; i <= 100; i++){
+   if(i % divisibleByThree === 0 && i % divisibleByFive === 0)
+      console.log('fizzbuzz')
+   else if(i % divisibleByThree === 0)
+      console.log('fizz')
+   else if(i % divisibleByFive === 0)
+      console.log('buzz')
+   else 
+      console.log(i)
+}
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
