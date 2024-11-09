@@ -1,121 +1,133 @@
-/*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up!🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
+// JavaScript Basics Assignment
 
-/*
-Task 1 - Voting Age
+/*🏋️‍♂️ Task 1: Voting Age Check 🗳️ */
 
-Do the following:   
-   1. Make a variable called votingAge and give it a value
-   2. Return true if age is 18 or higher
+// 1. Create a variable called `votingAge` and set it to any age.
+// 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
+// 3. Log the result to the console.
 
-*/
-
+let votingAge = /* Your code here */;
 
 
-/*
-Task 2 - Values
+/*🏋️‍♂️ Task 2: Variable Value Swap 🔄 */
 
-Do the following:   
-   1. Declare two variables and assign them values
-   2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
-   3. Return the new value of the 1st variable
+// 1. Declare two variables and assign them initial values of your choice.
+// 2. Write a conditional that changes the value of the first variable if a certain condition with the second variable is met.
+// 3. Log the new value of the first variable to the console.
 
-*/
-
+let variableOne = /* Your code here */;
+let variableTwo = /* Your code here */;
 
 
-/*
-Task 3 - Convert Strings to Numbers
+/*🏋️‍♂️ Task 3: Favorite Number Checker 🔢 */
 
-Do the following:   
-   1. Declare a string type variable with the value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Return the result
+// 1. Declare a variable named `favoriteNumber` and assign it your favorite number.
+// 2. Write a conditional to check if `favoriteNumber` is greater than, less than, or equal to 10.
+// 3. Log the result with a message, e.g., "My favorite number is greater than 10."
 
-   HINT: look up the Number method
-*/
+let favoriteNumber = /* Your code here */;
 
 
-/*
-Task 4 - Mood Checker
+/*🏋️‍♂️ Task 4: Mood Checker 😊😢 */
 
-Do the following:   
-   1. Write a script that prompts the user for their current mood. 
-   2. If the user inputs happy, print 'Yay me too!' to the console, sad print 'Aw cheer up',
-   3. Else just print 'So moody!'
+// 1. Prompt the user to enter their mood.
+// 2. Write a conditional that logs the following responses based on the user input:
+//    - "Yay me too!" if the mood is "happy"
+//    - "Aw, cheer up" if the mood is "sad"
+//    - "So moody!" for any other input
 
-*/
-
-
-/*
+let mood = prompt("How are you feeling today?");
 
 
-Task 5 - Odd or Even
+/*🏋️‍♂️ Task 5: Odd or Even Checker 🔍 */
 
-Use conditionals to check if a hardcoded number is odd or even, and then console.log the number is odd or even with the numbers value.
+// 1. Choose a hardcoded number and store it in a variable.
+// 2. Write a conditional to check if the number is odd or even.
+// 3. Log whether the number is odd or even, along with the number, to the console.
 
-*/
-
-var num; // write a number here
-
-// write your conditions here
+let num = /* Your code here */;
 
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 FIZZBUZZ 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+/*🚀 FIZZBUZZ 🚀 */
 
-/*
+// 1. Write a program that prints numbers from 1 to 100.
+// 2. For multiples of 3, print "Fizz" instead of the number.
+// 3. For multiples of 5, print "Buzz".
+// 4. For multiples of both 3 and 5, print "FizzBuzz".
+// 5. Add a check for prime numbers and print "Prime" for those.
 
-You're about to do an assignment called "Fizz Buzz", which is one of the classic programming challenges. 
-It is a favorite for interviewers, and a shocking number of job-applicants can't get it right. 
-But you won't be one of those people. Here are the rules for the assignment:
-
-Write a program that prints the numbers from 1 to 100.
-
-But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz".
-
-For numbers which are multiples of both three and five print "FizzBuzz".
-
-The one hint you'll likely need is:
-
-There is a Javascript operator called "remainder" but often referred to as "modulus" or "modulo". 
-It is represented by the percentage sign (%) and it gives you the remainder left over after division. So for example:
-
- 6 % 3
-
-Equals zero. Because after dividing 6 by 3, there is zero leftover. Whereas:
-
-6 % 4
-
-Equals 2. Because after dividing 6 by 4, there are 2 left over from the six.
-
-If that was confusing, don't worry. It will make more sense as you use it. 
-The point is: the remainder operator is useful for finding out if X is a multiple of Y. If it is, then X % Y will yield zero. 
-Knowing this should help you complete this assignment without any issue.
-
-
-Extra Credit:
-
-Instead of only printing "fizz", "buzz", and "fizzbuzz", add a fourth print statement: "prime". 
-You should print this whenever you encounter a number that is prime (divisible only by itself and one).
-As you implement this, don't worry about the efficiency of the algorithm you use to check for primes. 
-It's okay for it to be slow.
-
-
-*/
-
-
-/*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
-
-//Vowel Counter - How many vowels are there?
-/*
-Using the vowelCounter function below do the following:
-  1. Receive a string as a parameter
-  2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
-  HINT - you may need to study next week's content on arrays 
-  HINT - try looking up the .includes() method
-*/
-
-
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+for (let i = 1; i <= 100; i++) {
+    // Your FizzBuzz logic here
 }
+
+// Bonus: Create a helper function to check if a number is prime.
+
+
+/*💪 Stretch 1: Vowel Counter 💪 */
+
+// Write a `vowelCounter` function that takes a string as a parameter.
+// Count and return the number of vowels in the string, handling both uppercase and lowercase vowels.
+// Hint: You may need to use the `.includes()` method.
+
+function vowelCounter(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the `vowelCounter` function by calling it with different strings.
+
+
+/*💪 Stretch 2: Simple Calculator 💪 */
+
+// Write a `simpleCalculator` function that accepts two numbers and an operator ("+", "-", "*", "/") as parameters.
+// Based on the operator, perform the appropriate mathematical operation and return the result.
+// Log the result to the console.
+// Include error handling for cases where the operator is invalid.
+
+function simpleCalculator(/* Add parameters here */) {
+    // Your code here
+}
+
+
+/*💪 Stretch 3: Temperature Converter 💪 */
+
+// Write a `toCelsius` function that takes a Fahrenheit temperature and returns the equivalent Celsius temperature.
+// Write a `toFahrenheit` function that takes a Celsius temperature and returns the equivalent Fahrenheit temperature.
+// Formula:
+//  - Celsius to Fahrenheit: (C * 9/5) + 32
+//  - Fahrenheit to Celsius: (F - 32) * 5/9
+
+function toCelsius(/* Add parameter here */) {
+    // Your code here
+}
+
+function toFahrenheit(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the temperature converter functions by calling them with different temperatures.
+
+
+/*💪 Stretch 4: Factorial Calculation 💪 */
+
+// Write a `factorial` function that takes a number as a parameter and returns the factorial of that number.
+// Use a loop to calculate the factorial.
+// Factorial of 0 is 1, and factorial of any positive number n is the product of all positive integers less than or equal to n.
+
+function factorial(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the factorial function by calling it with different numbers.
+
+
+/*💪 Stretch 5: Palindrome Checker 💪 */
+
+// Write a `isPalindrome` function that checks if a given string is a palindrome (reads the same forwards and backwards).
+// Ignore spaces, punctuation, and case when checking if the string is a palindrome.
+// Return true if the string is a palindrome, otherwise return false.
+
+function isPalindrome(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the isPalindrome function by calling it with different strings.
