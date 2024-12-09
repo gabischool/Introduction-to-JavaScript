@@ -1,177 +1,138 @@
-/*🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️ Task 1: Warm-up!🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️🏋️‍♂️*/
+// JavaScript Basics Assignment
 
-/*
-Task 1a - Voting Age
+/*🏋️‍♂️ Task 1: Voting Age Check 🗳️ */
 
-Do the following:   
-   1. Make a variable called votingAge and give it a value
-   2. Return true if age is 18 or higher
+// 1. Create a variable called `votingAge` and set it to any age.
+// 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
+// 3. Log the result to the console.
 
-   HINT: no function required
-*/
+let votingAge = 16;
 
+if (votingAge >= 18) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
+/*🏋️‍♂️ Task 2: Variable Value Swap 🔄 */
 
-/*
-Task 1b - Values
+// 1. Declare two variables and assign them initial values of your choice.
+// 2. Write a conditional that changes the value of the first variable if a certain condition with the second variable is met.
+// 3. Log the new value of the first variable to the console.
 
-Do the following:   
-   1. Declare two variables and assign them values
-   2. Use a conditional to change the value of the 1st variable based on the value assigned to the 2nd variable
-   3. Return the new value of the 1st variable
-
-   HINT: no function required
-*/
-
-
-
-/*
-Task 1c - Convert Strings to Numbers
-
-Do the following:   
-   1. Declare a string type variable with the value of "1999"
-   2. Convert the string value of "1999" to a integer value of 1999
-   3. Return the result
-
-   HINT: look up the Number method
-*/
+// let variableOne = /* Your code here */;
+// let variableTwo = /* Your code here */;
 
 
+/*🏋️‍♂️ Task 3: Favorite Number Checker 🔢 */
 
-/*
-Task 1d - Multiply
- 
-Do the following:   
-   1. Invoke the multiply function below and pass it two numbers
-   2. Receive the numbers in the parameters: a and b
-   3. Multiply a and b and return the answer
-*/
+// 1. Declare a variable named `favoriteNumber` and assign it your favorite number.
+// 2. Write a conditional to check if `favoriteNumber` is greater than, less than, or equal to 10.
+// 3. Log the result with a message, e.g., "My favorite number is greater than 10."
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+// let favoriteNumber = /* Your code here */;
 
 
+/*🏋️‍♂️ Task 4: Mood Checker 😊😢 */
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+// 1. Prompt the user to enter their mood.
+// 2. Write a conditional that logs the following responses based on the user input:
+//    - "Yay me too!" if the mood is "happy"
+//    - "Aw, cheer up" if the mood is "sad"
+//    - "So moody!" for any other input
 
-//Age in Cat years
-/*
-Do the following:
-   1. Invoke the catYears function below and pass an age value to it
-   2. Use the received value to calculate the age in cat years (1 human year is equal to 7 cat years)
-   3. Return the newly calculated age
-*/
+// let mood = prompt("How are you feeling today?");
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+
+/*🏋️‍♂️ Task 5: Odd or Even Checker 🔍 */
+
+// 1. Choose a hardcoded number and store it in a variable.
+// 2. Write a conditional to check if the number is odd or even.
+// 3. Log whether the number is odd or even, along with the number, to the console.
+
+// let num = /* Your code here */;
+
+
+/*🚀 FIZZBUZZ 🚀 */
+
+// 1. Write a program that prints numbers from 1 to 100.
+// 2. For multiples of 3, print "Fizz" instead of the number.
+// 3. For multiples of 5, print "Buzz".
+// 4. For multiples of both 3 and 5, print "FizzBuzz".
+// 5. Add a check for prime numbers and print "Prime" for those.
+
+for (let i = 1; i <= 100; i++) {
+    // Your FizzBuzz logic here
+}
+
+// Bonus: Create a helper function to check if a number is prime.
+
+
+/*💪 Stretch 1: Vowel Counter 💪 */
+
+// Write a `vowelCounter` function that takes a string as a parameter.
+// Count and return the number of vowels in the string, handling both uppercase and lowercase vowels.
+// Hint: You may need to use the `.includes()` method.
+
+function vowelCounter(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the `vowelCounter` function by calling it with different strings.
+
+
+/*💪 Stretch 2: Simple Calculator 💪 */
+
+// Write a `simpleCalculator` function that accepts two numbers and an operator ("+", "-", "*", "/") as parameters.
+// Based on the operator, perform the appropriate mathematical operation and return the result.
+// Log the result to the console.
+// Include error handling for cases where the operator is invalid.
+
+function simpleCalculator(/* Add parameters here */) {
+    // Your code here
 }
 
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+/*💪 Stretch 3: Temperature Converter 💪 */
 
-//Grocery Shopping List
-/*
-Do the following:
-   1. Create an array named "shoppingList" with these items "Onion", "Banana", "Bread", "Milk", "Eggs".
-   2. Using the function below "removeItem", remove items as you check them off from your shopping list.
-   3. Every time you invoke the function, it should remove one item.
-   4. Return this statement "Shopping list is empty" when you remove all of the items.
-*/
+// Write a `toCelsius` function that takes a Fahrenheit temperature and returns the equivalent Celsius temperature.
+// Write a `toFahrenheit` function that takes a Celsius temperature and returns the equivalent Fahrenheit temperature.
+// Formula:
+//  - Celsius to Fahrenheit: (C * 9/5) + 32
+//  - Fahrenheit to Celsius: (F - 32) * 5/9
 
-function removeItem(/*add your code here*/){
-    /*add your code here*/
+function toCelsius(/* Add parameter here */) {
+    // Your code here
 }
 
-
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
-// Rock, Paper, Scissors - Let's play against the computer!
-/*
-Create a global variable that randomly generates the computer's choice
-Use Math.random to determine the computers choice (Math.random gives a random number between 0 and 1)
-
-HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
-
-Use the game function below to do the following:
-  1. Receive 2 parameters the user's choice and the computer's choice
-  2. Return whether the user won, lost, or tied based on these rules of the game described below - the strings returned need to match the strings below exactly.
-   - win should return "you win!"
-   - lose should return "you lose!"
-   - tie should return "it's a tie"
-  
-  RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
-  
-  HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
-*/
-
-function game(user, computer){
-    /*add your code here*/
+function toFahrenheit(/* Add parameter here */) {
+    // Your code here
 }
-  
+
+// Test the temperature converter functions by calling them with different temperatures.
 
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+/*💪 Stretch 4: Factorial Calculation 💪 */
 
-// Let's Sing 99 Bottles of Soda on the Wall!
-/*
-Using the annoyingSong function below do the following:
-  1. Receive a starting number and start the count down from the number received 
-  2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
-      "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
-*/
+// Write a `factorial` function that takes a number as a parameter and returns the factorial of that number.
+// Use a loop to calculate the factorial.
+// Factorial of 0 is 1, and factorial of any positive number n is the product of all positive integers less than or equal to n.
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
-
-
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
-
-//Grade Calculator
-/*
-Using the grade function below do the following: 
-  1. Receive a score out of 100 
-  2. Return the corresponding letter grade following this grade scale:
-
-   90-100 should return 'you got an A' 
-   80-89 should return 'you got a B'
-   70-79 should return 'you got a C'
-   60-69 should return 'you got a D'
-   below should return 'you got an F'
-*/
-  
-function grade(num){
-    if(num < 100 && num >= 90){
-      return 'you got an A';
-    }else if(num <90 && num >= 80){
-      return 'you got a B';
-    }else if(num < 80 && num >= 70){
-      return 'you got a C';
-    }else if(num < 70 && num >= 60){
-      return 'you got a D';
-    }else if(num < 60){
-      return 'you got an F';
-    }
-  }
-  
-  console.log('grade function', grade(85));
-  
-  
-
-/*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
-
-//Vowel Counter - How many vowels are there?
-/*
-Using the vowelCounter function below do the following:
-  1. Receive a string as a parameter
-  2. Count and return the number of vowels within that string.  It should handle both capitalized and uncapitalized vowels.
-
-  HINT - you may need to study tomorrow's content on arrays 
-  HINT - try looking up the .includes() method
-*/
-
-
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function factorial(/* Add parameter here */) {
+    // Your code here
 }
+
+// Test the factorial function by calling it with different numbers.
+
+
+/*💪 Stretch 5: Palindrome Checker 💪 */
+
+// Write a `isPalindrome` function that checks if a given string is a palindrome (reads the same forwards and backwards).
+// Ignore spaces, punctuation, and case when checking if the string is a palindrome.
+// Return true if the string is a palindrome, otherwise return false.
+
+function isPalindrome(/* Add parameter here */) {
+    // Your code here
+}
+
+// Test the isPalindrome function by calling it with different strings.
