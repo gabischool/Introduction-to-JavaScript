@@ -4,7 +4,7 @@
 
 // 1. Create a variable called `votingAge` and set it to any age.
 // 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
-// 3. Log the result to the console.
+// 3. Log the result to the console.clear
 
 let votingAge = 16;
 
