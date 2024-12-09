@@ -1,12 +1,17 @@
 // JavaScript Basics Assignment
-
+console.log("Test Text")
 /*🏋️‍♂️ Task 1: Voting Age Check 🗳️ */
 
 // 1. Create a variable called `votingAge` and set it to any age.
 // 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
 // 3. Log the result to the console.
 
-let votingAge = /* Your code here */;
+let votingAge = 21;
+if (votingAge >= 18) {
+    console.log(true);
+} else {
+    console.log(false);
+}
 
 
 /*🏋️‍♂️ Task 2: Variable Value Swap 🔄 */
@@ -14,9 +19,13 @@ let votingAge = /* Your code here */;
 // 1. Declare two variables and assign them initial values of your choice.
 // 2. Write a conditional that changes the value of the first variable if a certain condition with the second variable is met.
 // 3. Log the new value of the first variable to the console.
-
-let variableOne = /* Your code here */;
-let variableTwo = /* Your code here */;
+let variableOne = "new";
+let variableTwo = "old";
+let temp=variableOne;
+variableOne=variableTwo
+variableTwo = temp;
+console.log(variableOne);
+console.log(variableTwo);
 
 
 /*🏋️‍♂️ Task 3: Favorite Number Checker 🔢 */
@@ -25,8 +34,14 @@ let variableTwo = /* Your code here */;
 // 2. Write a conditional to check if `favoriteNumber` is greater than, less than, or equal to 10.
 // 3. Log the result with a message, e.g., "My favorite number is greater than 10."
 
-let favoriteNumber = /* Your code here */;
-
+let favoriteNumber = 8;
+if (favoriteNumber>10) {
+    console.log("My favorite number is greater than 10.");
+} else if (favoriteNumber < 10) {
+    console.log("my favorite number is less than 10. ");
+} else {
+    console.log("My favorite number is 10.");
+}
 
 /*🏋️‍♂️ Task 4: Mood Checker 😊😢 */
 
@@ -37,6 +52,13 @@ let favoriteNumber = /* Your code here */;
 //    - "So moody!" for any other input
 
 let mood = prompt("How are you feeling today?");
+if (mood ==="happy"){
+    console.log( "Yay me too!");
+} else if (mood === "sad") {
+    console.log("Aw, cheer up!");
+} else{
+    console.log("So moody!");
+}
 
 
 /*🏋️‍♂️ Task 5: Odd or Even Checker 🔍 */
@@ -45,7 +67,12 @@ let mood = prompt("How are you feeling today?");
 // 2. Write a conditional to check if the number is odd or even.
 // 3. Log whether the number is odd or even, along with the number, to the console.
 
-let num = /* Your code here */;
+let num = 7
+if(num % 2===0){
+    console.log(num + "is even.");
+} else {
+    console.log(num + " is odd.");
+}
 
 
 /*🚀 FIZZBUZZ 🚀 */
@@ -57,7 +84,15 @@ let num = /* Your code here */;
 // 5. Add a check for prime numbers and print "Prime" for those.
 
 for (let i = 1; i <= 100; i++) {
-    // Your FizzBuzz logic here
+    if( i% 3===0 && i % 5===0) {
+        console.log("FizzBuzz");
+    } else if (i % 3===0) {
+        console.log("Fizz");
+    } else if (i % 5===0) {
+        console.log ("Buzz");  
+    } else {
+        console.log (i);
+    }
 }
 
 // Bonus: Create a helper function to check if a number is prime.
