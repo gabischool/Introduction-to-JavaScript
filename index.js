@@ -6,7 +6,10 @@
 // 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
 // 3. Log the result to the console.
 
-let votingAge = /* Your code here */;
+let votingAge = 18;
+if (votingAge <= 21){
+console.log('The expression is true')}
+else {console.log('The expression is false')}
 
 
 /*🏋️‍♂️ Task 2: Variable Value Swap 🔄 */
@@ -15,8 +18,11 @@ let votingAge = /* Your code here */;
 // 2. Write a conditional that changes the value of the first variable if a certain condition with the second variable is met.
 // 3. Log the new value of the first variable to the console.
 
-let variableOne = /* Your code here */;
-let variableTwo = /* Your code here */;
+ let variableOne = 25;
+ let variableTwo = 27;
+ if (variableOne > 24){
+variableTwo = 25}
+console.log(variableTwo)
 
 
 /*🏋️‍♂️ Task 3: Favorite Number Checker 🔢 */
@@ -25,8 +31,14 @@ let variableTwo = /* Your code here */;
 // 2. Write a conditional to check if `favoriteNumber` is greater than, less than, or equal to 10.
 // 3. Log the result with a message, e.g., "My favorite number is greater than 10."
 
-let favoriteNumber = /* Your code here */;
-
+ let favoriteNumber = 13;
+ if (favoriteNumber > 10){
+    console.log('Its greater')
+ }
+else if (favoriteNumber == 10){
+    console.log('Its equal')
+}
+else {console.log('It less')}
 
 /*🏋️‍♂️ Task 4: Mood Checker 😊😢 */
 
@@ -36,8 +48,14 @@ let favoriteNumber = /* Your code here */;
 //    - "Aw, cheer up" if the mood is "sad"
 //    - "So moody!" for any other input
 
-let mood = prompt("How are you feeling today?");
-
+ let mood = prompt("How are you feeling today?");
+if (mood == 'happy'){
+    console.log('Yay me too!')
+}
+else if (mood == 'sad'){
+    console.log('Aw, cheer up soon')
+}
+else {console.log('So moody!')}
 
 /*🏋️‍♂️ Task 5: Odd or Even Checker 🔍 */
 
@@ -45,7 +63,11 @@ let mood = prompt("How are you feeling today?");
 // 2. Write a conditional to check if the number is odd or even.
 // 3. Log whether the number is odd or even, along with the number, to the console.
 
-let num = /* Your code here */;
+ let num = 5;
+ if (num % 2 == 0){
+    console.log('This is even')
+ }
+ else {console.log('This is odd')}
 
 
 /*🚀 FIZZBUZZ 🚀 */
@@ -56,9 +78,18 @@ let num = /* Your code here */;
 // 4. For multiples of both 3 and 5, print "FizzBuzz".
 // 5. Add a check for prime numbers and print "Prime" for those.
 
-for (let i = 1; i <= 100; i++) {
-    // Your FizzBuzz logic here
+ for (let i = 1; i <= 30; i++) {
+if ((i % 3 === 0) && (i % 5 === 0)){
+    console.log(i,'FizzBuzz')
 }
+else if (i % 3 == 0){
+    console.log(i,'Fizz')
+}
+else if (i % 5 == 0){
+    console.log(i,'Buzz')
+}
+else {console.log(i)}
+ }
 
 // Bonus: Create a helper function to check if a number is prime.
 
@@ -69,9 +100,9 @@ for (let i = 1; i <= 100; i++) {
 // Count and return the number of vowels in the string, handling both uppercase and lowercase vowels.
 // Hint: You may need to use the `.includes()` method.
 
-function vowelCounter(/* Add parameter here */) {
+// function vowelCounter(/* Add parameter here */) {
     // Your code here
-}
+// }
 
 // Test the `vowelCounter` function by calling it with different strings.
 
@@ -83,9 +114,9 @@ function vowelCounter(/* Add parameter here */) {
 // Log the result to the console.
 // Include error handling for cases where the operator is invalid.
 
-function simpleCalculator(/* Add parameters here */) {
+// function simpleCalculator(/* Add parameters here */) {
     // Your code here
-}
+// }
 
 
 /*💪 Stretch 3: Temperature Converter 💪 */
@@ -96,13 +127,13 @@ function simpleCalculator(/* Add parameters here */) {
 //  - Celsius to Fahrenheit: (C * 9/5) + 32
 //  - Fahrenheit to Celsius: (F - 32) * 5/9
 
-function toCelsius(/* Add parameter here */) {
+// function toCelsius(/* Add parameter here */) {
     // Your code here
-}
+// }
 
-function toFahrenheit(/* Add parameter here */) {
+// function toFahrenheit(/* Add parameter here */) {
     // Your code here
-}
+// }
 
 // Test the temperature converter functions by calling them with different temperatures.
 
@@ -113,9 +144,9 @@ function toFahrenheit(/* Add parameter here */) {
 // Use a loop to calculate the factorial.
 // Factorial of 0 is 1, and factorial of any positive number n is the product of all positive integers less than or equal to n.
 
-function factorial(/* Add parameter here */) {
+// function factorial(/* Add parameter here */) {
     // Your code here
-}
+// }
 
 // Test the factorial function by calling it with different numbers.
 
@@ -126,8 +157,8 @@ function factorial(/* Add parameter here */) {
 // Ignore spaces, punctuation, and case when checking if the string is a palindrome.
 // Return true if the string is a palindrome, otherwise return false.
 
-function isPalindrome(/* Add parameter here */) {
+// function isPalindrome(/* Add parameter here */) {
     // Your code here
-}
+// }
 
 // Test the isPalindrome function by calling it with different strings.
