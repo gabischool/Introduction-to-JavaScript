@@ -6,8 +6,13 @@
 // 2. Write a conditional that returns true if `votingAge` is 18 or older; otherwise, return false.
 // 3. Log the result to the console.
 
-let votingAge = /* Your code here */;
+let votingAge = 19;
 
+if (votingAge >= 18) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 /*🏋️‍♂️ Task 2: Variable Value Swap 🔄 */
 
@@ -15,9 +20,14 @@ let votingAge = /* Your code here */;
 // 2. Write a conditional that changes the value of the first variable if a certain condition with the second variable is met.
 // 3. Log the new value of the first variable to the console.
 
-let variableOne = /* Your code here */;
-let variableTwo = /* Your code here */;
+let variableOne = 15;
+let variableTwo = 10;
 
+if (variableTwo < variableOne) {
+  variableOne = 20;
+}
+
+console.log("New value of variableOne:", variableOne);
 
 /*🏋️‍♂️ Task 3: Favorite Number Checker 🔢 */
 
@@ -25,8 +35,15 @@ let variableTwo = /* Your code here */;
 // 2. Write a conditional to check if `favoriteNumber` is greater than, less than, or equal to 10.
 // 3. Log the result with a message, e.g., "My favorite number is greater than 10."
 
-let favoriteNumber = /* Your code here */;
+let favoriteNumber = 7;
 
+if (favoriteNumber > 10) {
+  console.log("My favorite number is greater than 10.");
+} else if (favoriteNumber < 10) {
+  console.log("My favorite number is less than 10.");
+} else {
+  console.log("My favorite number is equal to 10.");
+}
 
 /*🏋️‍♂️ Task 4: Mood Checker 😊😢 */
 
@@ -38,6 +55,13 @@ let favoriteNumber = /* Your code here */;
 
 let mood = prompt("How are you feeling today?");
 
+if (mood === "happy") {
+  console.log("Yay me too!");
+} else if (mood === "sad") {
+  console.log("Aw, cheer up");
+} else {
+  console.log("So moody!");
+}
 
 /*🏋️‍♂️ Task 5: Odd or Even Checker 🔍 */
 
@@ -45,8 +69,13 @@ let mood = prompt("How are you feeling today?");
 // 2. Write a conditional to check if the number is odd or even.
 // 3. Log whether the number is odd or even, along with the number, to the console.
 
-let num = /* Your code here */;
+let num = 14;
 
+if (num % 2 === 0) {
+  console.log(`${num} is even.`);
+} else {
+  console.log(`${num} is odd.`);
+}
 
 /*🚀 FIZZBUZZ 🚀 */
 
@@ -56,78 +85,100 @@ let num = /* Your code here */;
 // 4. For multiples of both 3 and 5, print "FizzBuzz".
 // 5. Add a check for prime numbers and print "Prime" for those.
 
-for (let i = 1; i <= 100; i++) {
-    // Your FizzBuzz logic here
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
 }
 
-// Bonus: Create a helper function to check if a number is prime.
-
+for (let i = 1; i <= 100; i++) {
+  if (isPrime(i)) {
+    console.log(`${i}: Prime`);
+  } else if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
 
 /*💪 Stretch 1: Vowel Counter 💪 */
 
-// Write a `vowelCounter` function that takes a string as a parameter.
-// Count and return the number of vowels in the string, handling both uppercase and lowercase vowels.
-// Hint: You may need to use the `.includes()` method.
+function vowelCounter(str) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
 
-function vowelCounter(/* Add parameter here */) {
-    // Your code here
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
 }
 
-// Test the `vowelCounter` function by calling it with different strings.
-
+console.log("Vowel count in 'Hello World':", vowelCounter("Hello World"));
 
 /*💪 Stretch 2: Simple Calculator 💪 */
 
-// Write a `simpleCalculator` function that accepts two numbers and an operator ("+", "-", "*", "/") as parameters.
-// Based on the operator, perform the appropriate mathematical operation and return the result.
-// Log the result to the console.
-// Include error handling for cases where the operator is invalid.
-
-function simpleCalculator(/* Add parameters here */) {
-    // Your code here
+function simpleCalculator(num1, num2, operator) {
+  switch (operator) {
+    case "+":
+      return num1 + num2;
+    case "-":
+      return num1 - num2;
+    case "*":
+      return num1 * num2;
+    case "/":
+      return num2 !== 0 ? num1 / num2 : "Error: Division by zero";
+    default:
+      return "Invalid operator";
+  }
 }
 
+console.log("Calculator result:", simpleCalculator(10, 2, "*"));
 
 /*💪 Stretch 3: Temperature Converter 💪 */
 
-// Write a `toCelsius` function that takes a Fahrenheit temperature and returns the equivalent Celsius temperature.
-// Write a `toFahrenheit` function that takes a Celsius temperature and returns the equivalent Fahrenheit temperature.
-// Formula:
-//  - Celsius to Fahrenheit: (C * 9/5) + 32
-//  - Fahrenheit to Celsius: (F - 32) * 5/9
-
-function toCelsius(/* Add parameter here */) {
-    // Your code here
+function toCelsius(fahrenheit) {
+  return ((fahrenheit - 32) * 5) / 9;
 }
 
-function toFahrenheit(/* Add parameter here */) {
-    // Your code here
+function toFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
 }
 
-// Test the temperature converter functions by calling them with different temperatures.
-
+console.log("32°F to Celsius:", toCelsius(32));
+console.log("0°C to Fahrenheit:", toFahrenheit(0));
 
 /*💪 Stretch 4: Factorial Calculation 💪 */
 
-// Write a `factorial` function that takes a number as a parameter and returns the factorial of that number.
-// Use a loop to calculate the factorial.
-// Factorial of 0 is 1, and factorial of any positive number n is the product of all positive integers less than or equal to n.
+function factorial(n) {
+  let result = 1;
 
-function factorial(/* Add parameter here */) {
-    // Your code here
+  for (let i = 1; i <= n; i++) {
+    result *= i;
+  }
+
+  return result;
 }
 
-// Test the factorial function by calling it with different numbers.
-
+console.log("Factorial of 5:", factorial(5));
 
 /*💪 Stretch 5: Palindrome Checker 💪 */
 
-// Write a `isPalindrome` function that checks if a given string is a palindrome (reads the same forwards and backwards).
-// Ignore spaces, punctuation, and case when checking if the string is a palindrome.
-// Return true if the string is a palindrome, otherwise return false.
-
-function isPalindrome(/* Add parameter here */) {
-    // Your code here
+function isPalindrome(str) {
+  const cleanStr = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  const reversedStr = cleanStr.split("").reverse().join("");
+  return cleanStr === reversedStr;
 }
 
-// Test the isPalindrome function by calling it with different strings.
+console.log("Is 'Racecar' a palindrome?", isPalindrome("Racecar"));
+console.log("Is 'Hello' a palindrome?", isPalindrome("Hello"));
+
+
